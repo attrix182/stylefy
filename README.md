@@ -2,8 +2,7 @@
 
   
 
-## DEMO: https://stylesls.netlify.app/
-
+## DEMO: https://stylefy.netlify.app/
   
 
 Framework propio de estilos
