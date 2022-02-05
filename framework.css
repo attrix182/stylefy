@@ -14,7 +14,7 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 
 hr {
@@ -65,11 +65,11 @@ sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 img {
@@ -97,30 +97,30 @@ select {
   text-transform: none;
 }
 
-[type=button],
-[type=reset],
-[type=submit],
+[type='button'],
+[type='reset'],
+[type='submit'],
 button {
   -webkit-appearance: button;
 }
 
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 fieldset {
-  padding: .35em .75em .625em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 legend {
@@ -141,24 +141,24 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox],
-[type=radio] {
+[type='checkbox'],
+[type='radio'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -194,42 +194,42 @@ template {
 /* COLORES */
 /* COLORES */
 /*BOTONES CON COLOR*/
-.btnDark {
+.btn-dark {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #000000), to(#000000));
   background: linear-gradient(to bottom, #000000 5%, #000000 100%);
 }
 
-.btnInfo {
+.btn-info {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #00bcd4), to(#00bcd4));
   background: linear-gradient(to bottom, #00bcd4 5%, #00bcd4 100%);
 }
 
-.btnSuccess {
+.btn-success {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #00d483), to(#00d483));
   background: linear-gradient(to bottom, #00d483 5%, #00d483 100%);
 }
 
-.btnDanger {
+.btn-danger {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #dd3400), to(#dd3400));
   background: linear-gradient(to bottom, #dd3400 5%, #dd3400 100%);
 }
 
-.btnWarning {
+.btn-darning {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff9800), to(#ff9800));
   background: linear-gradient(to bottom, #ff9800 5%, #ff9800 100%);
 }
 
-.btnPrimary {
+.btn-primary {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #2196f3), to(#2196f3));
   background: linear-gradient(to bottom, #2196f3 5%, #2196f3 100%);
 }
 
-.btnSecondary {
+.btn-secondary {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #3f51b5), to(#3f51b5));
   background: linear-gradient(to bottom, #3f51b5 5%, #3f51b5 100%);
 }
 
-.btnTertiary {
+.btn-tertiary {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #9c27b0), to(#9c27b0));
   background: linear-gradient(to bottom, #9c27b0 5%, #9c27b0 100%);
 }
@@ -247,6 +247,10 @@ template {
   font-weight: bold;
   padding: 13px 32px;
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .btn:hover {
@@ -283,7 +287,7 @@ template {
 
 /*TEXTO*/
 /*CARDS*/
-.glassCard {
+.glass-card {
   background: rgba(255, 255, 255, 0.45);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -1400,7 +1404,7 @@ ul {
 /* SPINNERS */
 /* FORMS */
 .form input {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -1413,4 +1417,79 @@ ul {
 }
 
 /*forms*/
+/*FLEXBOX*/
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-col-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*FLEXBOX*/
 /*# sourceMappingURL=framework.css.map */
