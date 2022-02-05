@@ -214,7 +214,7 @@ template {
   background: linear-gradient(to bottom, #dd3400 5%, #dd3400 100%);
 }
 
-.btn-darning {
+.btn-warning {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff9800), to(#ff9800));
   background: linear-gradient(to bottom, #ff9800 5%, #ff9800 100%);
 }
@@ -232,6 +232,10 @@ template {
 .btn-tertiary {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #9c27b0), to(#9c27b0));
   background: linear-gradient(to bottom, #9c27b0 5%, #9c27b0 100%);
+}
+
+.btn-border-dark {
+  border-color: #000000;
 }
 
 /*BOTONES CON COLOR*/

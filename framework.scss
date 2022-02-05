@@ -216,7 +216,7 @@ $tertiary: #9c27b0;
   background: linear-gradient(to bottom, $danger 5%, $danger 100%);
 }
 
-.btn-darning {
+.btn-warning {
   background: linear-gradient(to bottom, $warning 5%, $warning 100%);
 }
 
@@ -231,6 +231,11 @@ $tertiary: #9c27b0;
 .btn-tertiary {
   background: linear-gradient(to bottom, $tertiary 5%, $tertiary 100%);
 }
+
+.btn-border-dark {
+  border-color: #000000;
+}
+
 
 /*BOTONES CON COLOR*/
 
