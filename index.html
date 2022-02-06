@@ -68,23 +68,23 @@
       </div>
 
       <div class="container glass-card mt-2 mb-2 center bg-gray">
-        <h3 class="subtitle">GRID: row -> col col col:</h3>
+        <h3 class="subtitle">FLEX: flex-row:</h3>
         <h3 class="subtitle">Hover effects</h3>
 
-        <div class="row mt-2 mb-2">
-          <div class="glass-card pulse noDrag m-1 col">
+        <div class="flex flex-row flex-space-between mt-2 mb-2">
+          <div class="glass-card pulse noDrag flex-grow-1 m-1">
             <h1>pulse</h1>
           </div>
-          <div class="glass-card blur noDrag m-1 col">
+          <div class="glass-card blur noDrag flex-grow-1 m-1">
             <h1>blur</h1>
           </div>
-          <div class="glass-card transparent noDrag m-1 col">
+          <div class="glass-card transparent flex-grow-1 noDrag m-1">
             <h1>transparent</h1>
           </div>
         </div>
 
-        <div class="row mt-2 mb-2">
-          <div class="glass-card rounded-0 byn noDrag m-1 col">
+        <div class="flex flex-row mt-2 mb-2">
+          <div class="glass-card rounded-0 byn noDrag m-1">
             <img src="./img/stockPic1.jpg" alt="" class="img-card" />
           </div>
           <div class="glass-card rounded-0 zoom-out noDrag m-1 col">
@@ -97,10 +97,10 @@
       </div>
 
       <div class="container glass-card mt-2 mb-2 center bg-gray">
-        <h3 class="subtitle">Spinners - Inputs -</h3>
+        <h3 class="subtitle">Spinners - Inputs</h3>
 
-        <div class="row mt-2 mb-2">
-          <div class="glass-card m-1 col">
+        <div class="mt-2 mb-2">
+          <div class="glass-card m-1">
             <div class="mt-1 mb-1">
               <div class="spinner-dark"></div>
               <div class="spinner-light"></div>
@@ -117,32 +117,30 @@
               </form>
             </div>
           </div>
-          <div class="glass-card m-1 col"></div>
         </div>
       </div>
 
       <div class="container glass-card mt-2 mb-2 center bg-gray">
-        <h1 class="subtitle">Flex column - Space around </h1>
+        <h1 class="subtitle">Flex row - Space around</h1>
         <div class="flex flex-row flex-space-around">
           <div class="btn btn-info">One</div>
           <div class="btn btn-info">Two</div>
           <div class="btn btn-info">Three</div>
         </div>
 
-        <h1 class="subtitle">Flex row - Space between </h1>
+        <h1 class="subtitle">Flex row - Space between</h1>
         <div class="flex flex-row flex-space-between mb-2">
-            <div class="btn btn-info">One</div>
-            <div class="btn btn-info">Two</div>
-            <div class="btn btn-info">Three</div>
-          </div>
+          <div class="btn btn-info">One</div>
+          <div class="btn btn-info">Two</div>
+          <div class="btn btn-info">Three</div>
+        </div>
 
-          <h1 class="subtitle">Flex col </h1>
-          <div class="flex flex-col mb-2">
-              <div class="btn btn-info">One</div>
-              <div class="btn btn-info">Two</div>
-              <div class="btn btn-info">Three</div>
-            </div>
-
+        <h1 class="subtitle">Flex col</h1>
+        <div class="flex flex-col mb-2">
+          <div class="btn btn-info">One</div>
+          <div class="btn btn-info mb-1 mt-1">Two</div>
+          <div class="btn btn-info">Three</div>
+        </div>
       </div>
     </div>
   </body>

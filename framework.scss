@@ -232,9 +232,6 @@ $tertiary: #9c27b0;
   background: linear-gradient(to bottom, $tertiary 5%, $tertiary 100%);
 }
 
-.btn-border-dark {
-  border-color: #000000;
-}
 
 
 /*BOTONES CON COLOR*/
@@ -321,29 +318,6 @@ $tertiary: #9c27b0;
   margin-left: auto;
 }
 
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.col {
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 100%;
-}
-
-.col-auto {
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: auto;
-  max-width: 100%;
-}
 
 @for $i from 1 through 12 {
   .col-#{$i} {
@@ -753,6 +727,7 @@ ul {
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+
 }
 /*forms*/
 
@@ -804,6 +779,16 @@ ul {
 .flex-space-around {
   justify-content: space-around;
 }
+
+@for $i from 0 through 12 {
+  .flex-grow-#{$i} {
+    flex-grow: #{$i};
+    flex-basis: 0;
+  }
+}
+
+
+
 
 /*FLEXBOX*/
 
